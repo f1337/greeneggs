@@ -53,7 +53,7 @@ module Bacon
 		def colorize_summary
 			line = capture_stdout { yield }
 
-			color = line.match(/0 failures, 0 errors/).nil? ? 'F' : :ok
+			color = line.match(/0 failures, 0 errors/).nil? ? :fail : :ok
 			line.sub(/^.+\d+ failures, \d+ errors$/, colorize('\0', color))
 		end
 
