@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{greeneggs}
-  s.version = "0.0.4"
+  s.version = "0.0.5"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Michael Fleet"]
@@ -18,6 +18,8 @@ Gem::Specification.new do |s|
      "LICENSE",
      "README.rdoc",
      "Rakefile",
+     "VERSION",
+     "greeneggs.gemspec",
      "lib/greeneggs.rb",
      "spec/greeneggs_spec.rb",
      "spec/spec_helper.rb"
