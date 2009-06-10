@@ -18,11 +18,11 @@ Or clone from github:
   git clone git://github.com/disinnovate/greeneggs.git
 
 Or add as a submodule to an existing git repository:
-  git add submodule git://github.com/disinnovate/greeneggs.git
+  git submodule add git://github.com/disinnovate/greeneggs.git
 
 For Ruby on Rails projects, clone to vendor/plugins/greeneggs:
   git clone git://github.com/disinnovate/greeneggs.git vendor/plugins/greeneggs
-  git add submodule git://github.com/disinnovate/greeneggs.git vendor/plugins/greeneggs
+  git submodule add git://github.com/disinnovate/greeneggs.git vendor/plugins/greeneggs
   
 
 == Usage
