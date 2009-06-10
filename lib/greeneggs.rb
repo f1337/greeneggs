@@ -4,8 +4,8 @@
 #
 # Copyright (C) 2009 Michael Fleet <disinnovate.com>
 #
-# GreenEggs is freely distributable under the terms of an MIT-style license.
-# See http://www.opensource.org/licenses/mit-license.php.
+# GreenEggs is freely distributable under the terms of the MIT license.
+# See LICENSE or http://www.opensource.org/licenses/mit-license.php for details.
 
 module Bacon
 	class << self

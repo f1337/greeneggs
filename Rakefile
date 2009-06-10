@@ -5,10 +5,11 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "greeneggs"
-    gem.summary = %Q{TODO}
+    gem.summary = %Q{GreenEggs is a small RedGreen-inspired plugin for Bacon}
     gem.email = "disinnovate@gmail.com"
     gem.homepage = "http://github.com/disinnovate/greeneggs"
     gem.authors = ["Michael Fleet"]
+		gem.add_dependency('bacon', '>= 1.0')
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
 

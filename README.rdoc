@@ -3,7 +3,16 @@
 GreenEggs is a small RedGreen-inspired plugin for Bacon.
 
 
+== Requirements
+
+* Ruby 1.8
+* Bacon >= 1.0
+
+
 == Installation
+
+Using RubyGems:
+  (sudo) gem install greeneggs -s http://gems.github.com
 
 Simply clone from github:
   git clone git://github.com/disinnovate/greeneggs.git
@@ -16,6 +25,33 @@ For Ruby on Rails projects, clone to vendor/plugins/greeneggs:
   git add submodule git://github.com/disinnovate/greeneggs.git vendor/plugins/greeneggs
   
 
+== Usage
+
+To use GreenEggs with Bacon[http://github.com/chneukirchen/bacon], simply <code>require 'greeneggs'</code> and you're done.
+
+Example:
+<code>
+require 'bacon'
+require 'greeneggs'
+
+describe 'GreenEggs' do
+  it 'should display passing specs in green' do
+    true.should.eql? true
+  end
+
+  it 'should display empty specs in yellow' do
+  end
+
+  it 'should display err-raising specs in purple/magenta' do
+		raise 'this is a dummy error'
+  end
+
+  it 'should display failed specs in red' do
+    should.flunk 'this is a dummy failure'
+  end
+end
+
+
 == TODO
 
 * Windows support
@@ -24,7 +60,7 @@ For Ruby on Rails projects, clone to vendor/plugins/greeneggs:
 == Thanks to
 
 * Pat Eyler (http://on-ruby.blogspot.com/) for teaching us to see in RedGreen (http://on-ruby.blogspot.com/2006/05/red-and-green-for-ruby.html).
-* Christian Neukirchen (http://chneukirchen.org/) for bringing home the Bacon (http://github.com/chneukirchen/bacon/).
+* Christian Neukirchen (http://chneukirchen.org/) for bringing home the Bacon (http://github.com/chneukirchen/bacon).
 
 
 == Links
