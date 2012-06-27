@@ -30,26 +30,26 @@ For Ruby on Rails projects, clone to vendor/plugins/greeneggs:
 To use GreenEggs with Bacon[http://github.com/chneukirchen/bacon], simply <code>require 'greeneggs'</code> and you're done.
 
 Example:
-<code>
-require 'bacon'
-require 'greeneggs'
 
-describe 'GreenEggs' do
-  it 'should display passing specs in green' do
-    true.should.eql? true
-  end
+    require 'bacon'
+    require 'greeneggs'
 
-  it 'should display empty specs in yellow' do
-  end
+    describe 'GreenEggs' do
+      it 'should display passing specs in green' do
+        true.should.eql? true
+      end
 
-  it 'should display err-raising specs in purple/magenta' do
-		raise 'this is a dummy error'
-  end
+      it 'should display empty specs in yellow' do
+      end
 
-  it 'should display failed specs in red' do
-    should.flunk 'this is a dummy failure'
-  end
-end
+      it 'should display err-raising specs in purple/magenta' do
+        raise 'this is a dummy error'
+      end
+
+      it 'should display failed specs in red' do
+        should.flunk 'this is a dummy failure'
+      end
+   end
 
 
 == TODO
