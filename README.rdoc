@@ -15,14 +15,14 @@ Using RubyGems:
   (sudo) gem install greeneggs -s http://gems.github.com
 
 Or clone from github:
-  git clone git://github.com/disinnovate/greeneggs.git
+  git clone git://github.com/f1337/greeneggs.git
 
 Or add as a submodule to an existing git repository:
-  git submodule add git://github.com/disinnovate/greeneggs.git
+  git submodule add git://github.com/f1337/greeneggs.git
 
 For Ruby on Rails projects, clone to vendor/plugins/greeneggs:
-  git clone git://github.com/disinnovate/greeneggs.git vendor/plugins/greeneggs
-  git submodule add git://github.com/disinnovate/greeneggs.git vendor/plugins/greeneggs
+  git clone git://github.com/f1337/greeneggs.git vendor/plugins/greeneggs
+  git submodule add git://github.com/f1337/greeneggs.git vendor/plugins/greeneggs
   
 
 == Usage
@@ -72,4 +72,4 @@ Example:
 
 == Copyright
 
-Copyright (c) 2009 Michael Fleet <disinnovate.com>. See LICENSE for details.
+Copyright © 2009 Michael Fleet <f1337.com>. See LICENSE for details.
